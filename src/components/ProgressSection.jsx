@@ -1,4 +1,3 @@
-// src/components/ProgressSection.jsx
 import React from 'react';
 
 const ProgressSection = ({ currentDay, totalDays, hatchDate }) => {

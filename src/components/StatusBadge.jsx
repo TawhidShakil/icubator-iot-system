@@ -1,4 +1,3 @@
-// src/components/StatusCard.jsx
 import React from 'react';
 
 const getIndicatorColor = (label, status) => {
