@@ -1,16 +1,54 @@
-# React + Vite
+# Project Title
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Brief description of the project and its purpose.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- Feature one
+- Feature two
+- Feature three
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Hardware Requirements
 
-## Expanding the ESLint configuration
+| Component | Role | Pin Configuration |
+|---------|------|------------------|
+| NodeMCU ESP8266 | Main Controller | — |
+| DHT22 | Temperature & Humidity Sensor | Data → D4 (GPIO2) |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Wiring Diagram
+Refer to the diagrams inside the docs/Wiring_Diagrams/ directory.
+
+---
+
+## Software Setup
+
+### 1. Arduino IDE Setup
+1. Install Arduino IDE.
+2. Install ESP8266 board package.
+3. Select board: NodeMCU 1.0 (ESP-12E Module).
+4. Set baud rate to *115200*.
+
+### 2. Library Installation
+Install the following libraries:
+- DHT Sensor Library
+- Firebase-ESP-Client
+- ArduinoJson
+- LiquidCrystal_I2C
+
+---
+
+## Firebase Configuration
+
+```json
+{
+  "controls": {
+    "target_temp": 37.7,
+    "target_humidity": 65.0
+  }
+}
